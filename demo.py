@@ -10,7 +10,6 @@ client = AzureOpenAI(
     azure_endpoint="https://demo.openai.azure.com"
 )
 
-
 def translate_text(text, target_language):
     system_message = f"""
 You are a professional translator proficient in translating English text into {target_language}.
@@ -132,6 +131,7 @@ def demo():
                 text-decoration: underline;
             }
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- jQuery and Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script
