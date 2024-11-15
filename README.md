@@ -27,9 +27,9 @@
 
 ## Introduction
 
-In today's globalized world, effective communication across different languages is more important than ever. Traditional translation tools often struggle with idiomatic expressions and cultural nuances. By leveraging Large Language Models (LLMs) like GPT-4, we can create a more sophisticated translator that understands context and provides more natural translations.
+In today's globalized world, effective communication across different languages is more important than ever. Traditional translation tools often struggle with idiomatic expressions and cultural nuances. By leveraging Large Language Models (LLMs) like GPT-4o, we can create a more sophisticated translator that understands context and provides more natural translations.
 
-In this tutorial, we'll build a web-based translator using Flask and Azure OpenAI's GPT-4 model. We'll also integrate Google Translate for comparison and ensure that the language parameters update dynamically based on user selection.
+In this tutorial, we'll build a web-based translator using Flask and Azure OpenAI's GPT-4o model. We'll also integrate Google Translate for comparison and ensure that the language parameters update dynamically based on user selection.
 
 ## Why Use LLMs for Translation?
 
@@ -104,7 +104,7 @@ If the text contains idioms, expressions, or cultural references, translate them
     user_input = text
 
     response = client.chat.completions.create(
-        model="gpt-4",  # Replace with your desired model
+        model="gpt-4o",  # Replace with your desired model
         messages=[
             {"role": "system", "content": system_message.strip()},
             {"role": "user", "content": user_input.strip()}
@@ -315,7 +315,7 @@ If the text contains idioms, expressions, or cultural references, translate them
     user_input = text
 
     response = client.chat.completions.create(
-        model="gpt-4",  # Replace with your desired model
+        model="gpt-4o",  # Replace with your desired model
         messages=[
             {"role": "system", "content": system_message.strip()},
             {"role": "user", "content": user_input.strip()}
