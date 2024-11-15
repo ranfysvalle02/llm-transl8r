@@ -111,6 +111,25 @@ def demo():
             .textarea-resize-none {
                 resize: none;
             }
+            ul li {
+                /* Display list items inline */
+                display: inline;
+                /* Add some space between list items */
+                margin: 0 15px;
+                /* Add transition */
+                transition: transform 0.2s ease, color 0.2s;   
+            }
+
+            ul li:hover {
+                /* Enlarge the text on hover */
+                transform: scale(1.2);
+                /* Change text color on hover */
+                color: #337ab7;  /* You can use any color you like here */
+                /* Show the text cursor as a pointer on hover*/
+                cursor: pointer;
+                /* Underline text on hover */
+                text-decoration: underline;
+            }
         </style>
         <!-- jQuery and Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -121,12 +140,23 @@ def demo():
     <body>
         <div class="container translator-container">
             <h1 class="text-center mb-5">LLM-Powered Translator Demo</h1>
+            <p>LLMs can recognize that "Break a leg" is an idiomatic expression meaning "Good luck" and provide an equivalent expression in the target language.</p>
+            <p>
+                Here are some other examples:
+                <ul>
+                    <li onclick="copyToInput(this.innerText)">Kick the bucket</li>
+                    <li onclick="copyToInput(this.innerText)">Under the weather</li>
+                    <li onclick="copyToInput(this.innerText)">Costs an arm and a leg</li>
+                    <li onclick="copyToInput(this.innerText)">Let the cat out of the bag</li>
+                    <li onclick="copyToInput(this.innerText)">Bite the bullet</li>
+                </ul>
+            </p>
             <div class="row">
                 <div class="col-md-5">
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">English Text</h5>
-                            <textarea id="english_text" class="form-control textarea-resize-none" rows="10" placeholder="Enter English text here..."></textarea>
+                            <textarea id="english_text" class="form-control textarea-resize-none" rows="10" placeholder="Enter English text here...">Break a leg!</textarea>
                         </div>
                     </div>
                 </div>
@@ -170,6 +200,9 @@ def demo():
           crossorigin="anonymous"
         ></script>
         <script>
+            function copyToInput(text) {
+                document.getElementById('english_text').value = text;
+            }
             $(document).ready(function() {
                 $('#translate_button').click(function() {
                     var englishText = $('#english_text').val().trim();
