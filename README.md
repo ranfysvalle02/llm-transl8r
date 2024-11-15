@@ -44,8 +44,6 @@ The LLM recognizes that "Break a leg" is an idiomatic expression meaning "Good l
 
 ## Implementing the Translator
 
-![](https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1)
-
 Let's dive into the code and understand how each part contributes to the application.
 
 ### Initializing the Azure OpenAI Client
