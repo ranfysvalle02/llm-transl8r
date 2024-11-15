@@ -34,15 +34,16 @@ In this tutorial, we'll build a web-based translator using Flask and Azure OpenA
 
 ## Why Use LLMs for Translation?
 
-LLMs excel at understanding context, idioms, and cultural references, providing translations that are not only accurate but also sound natural to native speakers.
+LLMs excel in understanding context, nuance, and cultural references, making them ideal for translating idiomatic expressions that traditional translators might misinterpret. By using an LLM, we can provide translations that are not only accurate but also culturally appropriate and natural-sounding.
 
 **Example:**
 
-- **English Text:** "It's raining cats and dogs."
-- **Traditional Translation (to French):** "Il pleut des chats et des chiens."
-- **LLM Translation:** "Il pleut des cordes."
+- **English Text:** "Break a leg!"
+- **Traditional Translation (to Spanish):** "¡Rompe una pierna!"
+- **LLM Translation:** "¡Mucha suerte!"
 
-The LLM recognizes the idiomatic expression and translates it into its French equivalent, preserving the intended meaning.
+The LLM recognizes that "Break a leg" is an idiomatic expression meaning "Good luck" and provides an equivalent expression in the target language.
+
 
 ## Setting Up the Flask Application
 
@@ -128,6 +129,7 @@ If the text contains idioms, expressions, or cultural references, translate them
 - **Prompt Engineering:** The `system_message` provides clear instructions to the LLM, ensuring accurate and context-aware translations.
 - **Dynamic Languages:** The function now accepts `source_language` and `target_language`, allowing for translations between any supported languages.
 - **Temperature Setting:** A low temperature (0.3) is used to make the output more deterministic.
+- **Model Selection:** Using `gpt-4o` for high-quality translations.
 
 ### Creating the Translation Endpoint
 
