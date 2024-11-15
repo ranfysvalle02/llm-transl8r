@@ -10,6 +10,7 @@ client = AzureOpenAI(
     azure_endpoint="https://demo.openai.azure.com"
 )
 
+
 def translate_text(text, target_language):
     system_message = f"""
 You are a professional translator proficient in translating English text into {target_language}.
@@ -148,7 +149,6 @@ def demo():
                     <li onclick="copyToInput(this.innerText)">Under the weather</li>
                     <li onclick="copyToInput(this.innerText)">Costs an arm and a leg</li>
                     <li onclick="copyToInput(this.innerText)">Let the cat out of the bag</li>
-                    <li onclick="copyToInput(this.innerText)">Bite the bullet</li>
                 </ul>
             </p>
             <div class="row">
