@@ -566,4 +566,4 @@ if __name__ == '__main__':
 
 ---
 
-Feel free to customize and expand upon this code to suit your specific needs. Happy translating!
+Feel free to customize and expand upon this code to suit your specific needs. 
