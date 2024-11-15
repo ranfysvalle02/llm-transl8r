@@ -2,7 +2,7 @@
 
 ---
 
-# Building an LLM-Powered Translator with Dynamic Language Support
+## Building an LLM-Powered Translator with Dynamic Language Support
 
 ![LLM Translator Demo](llm-transl8.png)
 
