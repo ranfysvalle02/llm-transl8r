@@ -1,12 +1,10 @@
 # llm-transl8r
 
-![](llm-transl8.png)
+![LLM Translator Demo](llm-transl8.png)
 
 ---
 
 # Building an LLM-Powered Translator
-
-![LLM Translator Demo](https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1)
 
 **Table of Contents**
 
@@ -45,6 +43,8 @@ The LLM recognizes that "Break a leg" is an idiomatic expression meaning "Good l
   ```
 
 ## Implementing the Translator
+
+![](https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1)
 
 Let's dive into the code and understand how each part contributes to the application.
 
