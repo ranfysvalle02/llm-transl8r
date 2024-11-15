@@ -165,7 +165,6 @@ def demo():
     <li onclick="copyToInput(this.innerText)">Under the weather</li>
     <li onclick="copyToInput(this.innerText)">Costs an arm and a leg</li>
     <li onclick="copyToInput(this.innerText)">Let the cat out of the bag</li>
-    <li onclick="copyToInput(this.innerText)">Bite the bullet</li>
 </ul>
 ```
 
