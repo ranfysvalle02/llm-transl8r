@@ -14,7 +14,6 @@
 - [Why Use LLMs for Translation?](#why-use-llms-for-translation)
 - [Setting Up the Flask Application](#setting-up-the-flask-application)
   - [Prerequisites](#prerequisites)
-  - [Project Structure](#project-structure)
 - [Implementing the Translator](#implementing-the-translator)
   - [Initializing the Azure OpenAI Client](#initializing-the-azure-openai-client)
   - [Crafting the Translation Function](#crafting-the-translation-function)
@@ -55,14 +54,7 @@ Ensure you have Python 3.x installed and install the required packages:
 pip install flask openai
 ```
 
-### Project Structure
-
-```
-llm-translator/
-├── app.py
-```
-
-- `app.py`: The main Flask application containing our code.
+- `demo.py`: The main Flask application containing our code.
 
 ## Implementing the Translator
 
@@ -269,18 +261,18 @@ function openGoogleTranslate() {
    Ensure all required libraries are installed.
 
    ```bash
-   pip install flask openai
+   pip3 install flask openai
    ```
 
 3. **Run the Flask App:**
 
    ```bash
-   python app.py
+   python3 demo.py
    ```
 
 4. **Access the Demo:**
 
-   Navigate to `http://localhost:5000/demo` in your web browser.
+   Navigate to `http://localhost:5000/demo` in your web browser or [click here](http://localhost:5000/demo).
 
 ## Conclusion
 
