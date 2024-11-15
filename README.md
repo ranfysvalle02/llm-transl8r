@@ -205,18 +205,18 @@ This ensures that idioms are not translated literally but are instead conveyed w
    Ensure all required libraries are installed.
 
    ```bash
-   pip install flask openai
+   pip3 install flask openai
    ```
 
 3. **Run the Flask App:**
 
    ```bash
-   python app.py
+   python3 app.py
    ```
 
 4. **Access the Demo:**
 
-   Navigate to `http://localhost:5000/demo` in your web browser.
+   Navigate to `http://localhost:5000/demo` in your web browser. ([you can also click here](http://localhost:5000/demo))
 
 ## Conclusion
 
